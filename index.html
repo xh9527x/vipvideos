@@ -16,6 +16,7 @@
             <label for="videoUrl">解析支持:优酷、爱奇艺、腾讯、芒果、乐视、搜狐、MP4、M3U8、FLV等等</label>
             <input type="text" id="videoUrl" name="url" placeholder="输入链接">
             <input type="submit" value="播放">
+            <input type="button" value="清除" onclick="clearUrl()">
             <p style="color: red; font-weight: bold;">请填入视频的名称或URL地址!</p>
             <div>
                 <span class="gray-text">备用地址:</span>
@@ -30,5 +31,11 @@
         </form>
     </div>
 </body>
+
+<script>
+    function clearUrl() {
+        document.getElementById("videoUrl").value = "";
+    }
+</script>
 
 </html>

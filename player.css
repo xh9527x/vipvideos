@@ -44,19 +44,21 @@ input[type="text"] {
     color: #0f0;
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="button"] {
     display: block;
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    background-color: #f00;
+    background-color: rgb(255, 68, 0);
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+input[type="button"]:hover {
     background-color: #c00;
 }
 
